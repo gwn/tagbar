@@ -67,6 +67,7 @@ let s:options = [
     \ ['systemenc', &encoding],
     \ ['width', 40],
     \ ['zoomwidth', 1],
+    \ ['top_align', 0],
 \ ]
 
 for [opt, val] in s:options

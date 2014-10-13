@@ -2994,8 +2994,9 @@ function! s:JumpToTag(stay_in_tagbar) abort
         let taginfo.fileinfo.fline[curline] = taginfo
     endif
 
-    " Center the tag in the window and jump to the correct column if available
-    normal! z.
+    " Center or top-align the tag in the window and jump to the correct
+    " column if available
+    execute 'normal! z' . (g:tagbar_top_align ? "\<CR>" : '.')
     call cursor(taginfo.fields.line, taginfo.fields.column)
 
     normal! zv

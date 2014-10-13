@@ -687,6 +687,17 @@ default statusline:
         endfunction
         let g:tagbar_status_func = 'TagbarStatusFunc'
 <
+                                                          *g:tagbar_top_align*
+g:tagbar_top_align~
+Default: 0
+
+If this variable is set to 1 then the tag that is jumped to is aligned to the
+top of the window, instead of the default of center.
+
+Example:
+>
+        let g:tagbar_top_align = 1
+
 
 ------------------------------------------------------------------------------
 HIGHLIGHT COLOURS                                           *tagbar-highlight*
